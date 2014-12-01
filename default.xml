@@ -4,12 +4,14 @@
   <remote  name="aosp"
            fetch="https://android-review.googlesource.com/" />
   <remote name="rascarlo"
-           fetch="git://github.com/rascarlo/" /> 
+           fetch="git://github.com/rascarlo/" />
+  <remote name="Snoop05"
+           fetch="git://github.com/Snoop05/" /> 
   <default revision="refs/tags/android-5.0.0_r7"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="android_build" groups="pdk,tradefed" remote="rascarlo" revision="lollipop-ras-mr1" >
+  <project path="build" name="android_build" groups="pdk,tradefed" remote="Snoop05" revision="lollipop-ras-mr1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
